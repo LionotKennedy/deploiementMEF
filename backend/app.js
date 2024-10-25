@@ -26,7 +26,8 @@ app.use(cors());
 app.use('/uploads', express.static('uploads'));
 
 dotenv.config();
-const PORT = process.env.PORT;
+// const PORT = process.env.PORT;
+const PORT = process.env.PORT || 9876;
 
 const CONNECTION = process.env.MONGODB_CONNECTION;
 
@@ -67,6 +68,10 @@ setInterval(checkAndArchive, 60 * 1000);
 setupTokenCleanup();
 // cleanupExpiredTokens();
 
+// app.listen(PORT, () => {
+//   console.log(`listening on port http://127.0.0.1:${PORT}`);
+// });
+
 app.listen(PORT, () => {
-  console.log(`listening on port http://127.0.0.1:${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
