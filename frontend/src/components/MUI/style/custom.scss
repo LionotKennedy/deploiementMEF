@@ -1,0 +1,29 @@
+.color-modal {
+    background-color: var(--second-bg);
+}
+
+.btn__modal__visa {
+    background-color: rgb(83, 81, 81) !important;
+    color: white !important;
+    
+    &:active {
+        transform: scale(0.9)
+    }
+    
+    &:hover {
+        background-color: gray !important;
+    }
+}
+
+.btn__modal__visa__fermer {
+    color: white !important;
+    background-color: rgb(227, 47, 47) !important;
+    
+    &:active {
+        transform: scale(0.9)
+    }
+    
+    &:hover {
+        background-color: rgb(238, 82, 82) !important;
+    }
+}

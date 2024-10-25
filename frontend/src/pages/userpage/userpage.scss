@@ -1,0 +1,123 @@
+$linear-gradient1: linear-gradient(90deg, #97776f, #6dfa08);
+$linear-gradient: linear-gradient(to bottom right,
+        var(--main-color),
+        var(--second-color),
+        var(--primary-color),
+    );
+
+.container__users {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+
+
+    .content__headers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: calc(var(--topnav-height) + 0px);
+
+
+        .title__profile {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .id__import {
+            display: none;
+        }
+
+        .back__icon {
+            width: 70%;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                transform: translateX(-10px);
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+
+
+    .user-form {
+        .container__form {
+
+            display: flex;
+            // justify-content: space-between;
+            justify-content: space-around;
+            // justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+
+            .image___recive {
+
+                .image-preview {
+                    max-width: 300px; // Ajuste cette valeur pour définir la largeur maximale
+                    max-height: 300px; // Ajuste cette valeur pour définir la hauteur maximale
+                    width: auto; // Laisse le navigateur calculer la largeur pour maintenir le rapport d'aspect
+                    height: auto; // Laisse le navigateur calculer la hauteur pour maintenir le rapport d'aspect
+                    display: block; // S'assure que l'image est traitée comme un bloc
+                    margin: 10px auto; // Centre l'image horizontalement
+                    border: 1px solid #ccc; // Optionnel : ajoute une bordure autour de l'image
+                    border-radius: 5px; // Optionnel : arrondit les coins de l'image
+                    object-fit: cover; // Remplit le conteneur tout en maintenant le rapport d'aspect
+                }
+
+            }
+
+            .content__form {
+                width: 45%;
+
+                .form-group {
+                    margin-bottom: 35px;
+
+                    input {
+                        width: 100%;
+                        padding: 10px 15px;
+                        border: none;
+                        border-bottom: 2px solid gray;
+                        background-color: var(--second-bg);
+                        color: var(--txt-color);
+
+                        &:focus {
+                            border-color: #0056b3;
+                            outline: none;
+                        }
+                    }
+                }
+
+                .btn__update__profile {
+
+                    .submit-button {
+                        background: $linear-gradient;
+                        padding: 10px;
+                        // background-color: var(--second-color);
+                        color: white;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        width: 100%;
+                        transition: all 0.4s ease-in-out;
+
+                        &:hover {
+                            background-color: var(--main-color);
+                            transition: all 0.4s ease-in-out;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .content__input {
+                input {
+                    width: 100%;
+                    padding: 5px;
+                    border: none;
+                    // border-bottom: 1px solid gray;
+                }
+            }
+        }
+    }
+}

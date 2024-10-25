@@ -1,0 +1,34 @@
+[
+    {
+        "display_name": "Dashboard",
+        "route": "/accueil",
+        "icon": "bx bx-grid" 
+    },
+    {
+        "display_name": "Courrier",
+        "route": "/courrier",
+        "icon": "bx bx-mail-send" 
+    },
+    {
+        "display_name": "Visa",
+        "route": "/visa",
+        "icon": "bx bx-id-card" 
+    },
+    {
+        "display_name": "Archive",
+        "route": "/archive",
+        "icon": "bx bx-archive" 
+    },
+    {
+        "display_name": "Journal",
+        "route": "/journal",
+        "icon": "bx bx-notepad" 
+    },
+    {
+        "display_name": "Utilisateur",
+        "route": "/utilisateur",
+        "icon": "bx bx-user" 
+    }
+]
+
+

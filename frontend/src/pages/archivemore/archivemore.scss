@@ -1,0 +1,36 @@
+.container__archive-more {
+    padding-top: calc(var(--topnav-height) + 0px);
+  }
+  
+.icon__back {
+    margin-top: 20px; 
+    display: flex;
+    justify-content: start; 
+    width: 2rem;
+    border-radius: 50%;
+    height: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .back-icon {
+    margin-top: 0.2rem;
+    color: var(--txt-color);
+    transition: transform 0.3s ease, color 0.3s ease;
+    &:hover {
+      color: #007bff; 
+      transform: translateX(-10px);
+    }
+  }
+
+  .content__archive-more {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // justify-content: flex-start;
+    padding-bottom: 2%;
+  }
+  
+  .title__archive-more {
+    font-size: 25px;
+    font-weight: 900;
+  }

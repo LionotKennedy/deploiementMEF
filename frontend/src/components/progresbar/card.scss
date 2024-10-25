@@ -1,0 +1,64 @@
+.card__proges {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    height: 320px;
+    background-color: var(--second-bg);
+    box-shadow: var(--box-shadow);
+}
+
+.card__proges:hover {
+    transform: scale(1.05);
+}
+
+.card-title__proges {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.progress-container__proges {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.card-description__proges {
+    color: var(--txt-color);
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .card__proges {
+        max-width: 90%;
+    }
+
+    .card-title__proges {
+        font-size: 1.2em;
+    }
+
+    .card-description__proges {
+        font-size: 0.8em;
+    }
+}
+
+// Personnaliser le texte et le chemin du CircularProgressbar
+.CircularProgressbar {
+    .CircularProgressbar-path {
+
+        stroke: var(--second-color);
+        stroke-linecap: round; // Arrondi des coins
+    }
+
+    .CircularProgressbar-text {
+        fill: var(--txt-color); // Couleur du texte
+        font-size: 16px; // Taille du texte
+    }
+}

@@ -1,0 +1,19 @@
+:root {
+    --main-color-green: #92ff96;
+    --second-color-green: #14e861;
+    --primary-color-green: #19961f;
+
+}
+
+$linear-gradient1: linear-gradient(90deg, #97776f, #6dfa08);
+$linear-gradient: linear-gradient(90deg,
+        var(--main-color),
+        var(--second-color),
+        var(--primary-color),
+    );
+
+.header__text {
+    color: grey !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+}

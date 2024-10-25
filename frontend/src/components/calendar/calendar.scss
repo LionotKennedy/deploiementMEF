@@ -1,0 +1,115 @@
+
+$gradient-gradient: linear-gradient(to bottom right,
+    var(--main-color),
+    var(--second-color),
+    var(--primary-color),
+  );
+
+.calendrier-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: var(--second-bg);
+  box-shadow: var(--box-shadow);
+}
+
+.calendrier-entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.calendrier-entete h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.btn__calendrier {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.calendrier-jours-semaine,
+.calendrier-jours {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  gap: 5px;
+  /* Espace entre les jours */
+}
+
+.jour-semaine {
+  font-weight: bold;
+}
+
+.jour {
+  width: 40px;
+  /* Largeur fixe */
+  height: 40px;
+  /* Hauteur fixe */
+  border-radius: 50%;
+  /* Arrondi */
+  margin: 0 auto;
+  /* Centre le jour */
+  cursor: pointer;
+  display: flex;
+  /* Utiliser Flexbox pour centrer le texte */
+  align-items: center;
+  /* Centrer verticalement */
+  justify-content: center;
+  /* Centrer horizontalement */
+}
+
+.jour.actif {
+  color: var(--txt-color);
+  box-shadow: var(--box-shadow);
+}
+
+.jour.inactif {
+  color: gray;
+}
+
+.jour.aujourd-hui {
+  background: $gradient-gradient;
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .calendrier-container {
+    padding: 15px;
+    /* Réduction du padding sur les petits écrans */
+  }
+
+  .calendrier-entete h2 {
+    font-size: 1.2em;
+    /* Réduction de la taille du texte */
+  }
+
+  .jour {
+    width: 35px;
+    /* Ajustement de la taille sur petits écrans */
+    height: 35px;
+    /* Ajustement de la taille sur petits écrans */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .calendrier-entete h2 {
+    font-size: 1em;
+    /* Réduction supplémentaire pour très petits écrans */
+  }
+
+  .jour {
+    width: 30px;
+    /* Réduction pour très petits écrans */
+    height: 30px;
+    /* Réduction pour très petits écrans */
+  }
+}

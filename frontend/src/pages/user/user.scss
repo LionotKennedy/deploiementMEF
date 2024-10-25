@@ -1,0 +1,60 @@
+.container__users {
+    padding-top: calc(var(--topnav-height) + 20px);
+}
+
+
+.add_users {
+    margin-left: 5%;
+    width: 90%;
+}
+
+.content__users {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2%;
+    
+    .title__user {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .user__add {
+        // padding-top: 20px;
+        // color: rgb(255, 255, 255);
+        // background-color: rgb(36, 140, 181);
+        color: var(--txt-color);
+        width: 30px;
+        background-color: var(--main-bg);
+        box-shadow: var(--box-shadow);
+        height: 30px;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    
+        &:hover {
+            // background-color: rgb(13, 66, 240);
+            // transform: scale(1.2);
+            transition: all 0.2s ease-in-out;
+            transform: rotateZ(90deg);
+        }
+    }
+}
+
+
+$linear-gradient: linear-gradient(90deg, #97776f, #6dfa08);
+
+
+.tsr{
+    background: $linear-gradient;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: var(--box-shadow);
+}
+.tsrs {
+    background: $linear-gradient; // Appliquez le dégradé comme fond
+    -webkit-background-clip: text; // Pour Safari
+    -webkit-text-fill-color: transparent; // Remplissage transparent
+    font-size: 2rem; // Ajustez la taille de la police si nécessaire
+}

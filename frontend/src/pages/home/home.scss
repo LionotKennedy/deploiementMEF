@@ -1,0 +1,44 @@
+.page-header {
+    margin-top: calc(var(--topnav-height) + 10px); /* Espace supplémentaire sous TopNav */
+    margin-bottom: calc(var(--topnav-height) + 10px); /* Espace supplémentaire sous TopNav */
+    text-transform: capitalize;
+}
+
+.card {
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.full-height {
+    height: 100%;
+} 
+
+.card.full-height {
+    height: calc(100% - 30px);
+}
+
+.card__header {
+    text-transform: capitalize;
+}
+
+.card > div ~ div {
+    margin-top: 30px;
+}
+
+.card__footer {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+/* RESPONSIVE */
+// @media (max-width: 1006px) {
+//         .card_col {
+//             grid-template-columns: repeat(1, 1fr);
+//             width: 8.33%;
+//             display: none;
+//         }
+// }

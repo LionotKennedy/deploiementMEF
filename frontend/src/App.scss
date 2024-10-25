@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.7px !important;
+    font-size: 0.88rem !important;
+}
+
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    color: var(--txt-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+input {
+    border: 2px solid transparent;
+    outline: 0;
+}
+
+input:focus {
+    border: 2px solid var(--main-color);
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* background-color: var(--main-color); */
+    // background-image: linear-gradient(to right,
+    //         var(--main-color),
+    //         var(--second-color));
+    background-color: rgb(138, 138, 138);
+}
+
+::-webkit-scrollbar-track {
+    // background-color: var(--main-color);
+    // background-color: rgb(58, 45, 45);
+    // background-color: rgb(138, 138, 138);
+    width: 50px;
+}

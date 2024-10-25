@@ -1,0 +1,69 @@
+.scale__facebook {
+    transition: transform 0.5s ease;
+    /* Ajoutez une transition pour un effet plus fluide */
+    border-radius: 50%;
+    color: #4267b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 5px 5px;
+    
+    &:hover {
+        transition: transform 0.3s ease;
+        color: #19459b;
+        /* Ajoutez une transition pour un effet plus fluide */
+        transform: scale(2) !important;
+    }
+}
+
+
+.scale__github {
+    transition: transform 0.5s ease;
+    /* Ajoutez une transition pour un effet plus fluide */
+    background-color: transparent;
+    padding: 5px 5px;
+    border-radius: 50%;
+
+    &:hover {
+        transition: transform 0.3s ease;
+        /* Ajoutez une transition pour un effet plus fluide */
+        transform: scale(2) !important;
+        /* Appliquer le zoom */
+        color: rgb(29, 24, 24);
+    }
+}
+
+.scale__email {
+    transition: transform 0.5s ease;
+    /* Ajoutez une transition pour un effet plus fluide */
+    background-color: transparent;
+    padding: 5px 5px;
+    border-radius: 50%;
+    color: #225129;
+
+    &:hover {
+        transition: transform 0.3s ease;
+        /* Ajoutez une transition pour un effet plus fluide */
+        transform: scale(2) !important;
+        /* Appliquer le zoom */
+        color: #455122;
+    }
+}
+
+.scale__instagram {
+    transition: transform 0.5s ease;
+    /* Ajoutez une transition pour un effet plus fluide */
+    background-color: transparent;
+    padding: 5px 5px;
+    border-radius: 50%;
+    color: #e1306c;
+
+    &:hover {
+        transition: transform 0.3s ease;
+        /* Ajoutez une transition pour un effet plus fluide */
+        transform: scale(2) !important;
+        /* Appliquer le zoom */
+        color: #ac1a4b;
+    }
+}

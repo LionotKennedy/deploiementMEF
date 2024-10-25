@@ -1,0 +1,15 @@
+[
+    {
+        "icon": "bx bx-user",
+        "route": "/profile",
+        "content": "Profile"
+    },
+    {
+        "icon": "bx bx-cog",
+        "content": "À propos"
+    },
+    {
+        "icon": "bx bx-log-out-circle bx-rotate-180",
+        "content": "Sortie"
+    }
+]

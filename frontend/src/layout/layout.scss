@@ -1,0 +1,28 @@
+.layout {
+    color: var(--txt-color);
+}
+
+.layout__content {
+    background-color: var(--second-bg);
+    // background-color: aqua;
+    padding-left: var(--sidebar-width);
+    min-height: 100vh;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+
+    &.actif {
+        padding-left: 0px;
+    }
+
+    @media (max-width: 998px) {
+        padding-left: 0px;
+
+        &.actif {
+            padding-left: var(--sidebar-width);
+        }
+    }
+}
+
+.layout__content-main {
+    padding: 30px;
+}

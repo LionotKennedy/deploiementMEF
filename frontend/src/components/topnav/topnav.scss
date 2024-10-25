@@ -1,0 +1,135 @@
+.topnav {
+    background-color: var(--main-bg);
+    // background-color: red;
+    position: fixed;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - var(--sidebar-width));
+    top: 0;
+    left: var(--sidebar-width);
+    z-index: 1000;
+    height: var(--topnav-height-t);
+    transition: all 0.3s ease-in-out;
+    // border-bottom: 1px solid rgba(134, 133, 133, 0.633);
+    box-shadow: var(--box-shadow);
+
+    &.actif {
+        width: 100%;
+        left: 0px;
+    }
+
+    @media (max-width: 998px) {
+        width: 100%;
+        left: 0px;
+
+        &.actif {
+            width: calc(100% - var(--sidebar-width));
+            left: var(--sidebar-width);
+        }
+    }
+
+}
+
+
+.topnav__search {
+    position: relative;
+    height: 30px;
+    background-color: var(--main-bg);
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+
+.topnav__search>input {
+    height: 100%;
+    width: 100%;
+    padding: 10px 60px 10px 20px;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    color: var(--txt-color);
+    background-color: var(--main-bg);
+}
+
+
+.topnav__search>i {
+    font-size: 1.4rem;
+    position: absolute;
+    right: 20px;
+    color: var(--txt-color);
+}
+
+.topnav__right {
+    display: flex;
+    align-items: center;
+
+}
+
+.topnav__right-item~.topnav__right-item {
+    margin-left: 30px;
+    color: var(--txt-color);
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.notification-item:hover {
+    background-color: var(--second-bg);
+}
+
+.notification-item>i {
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+.topnav__right-user {
+    display: flex;
+    align-items: center;
+}
+
+.topnav__right-user__image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.topnav__right-user__image>img {
+    width: 100%;
+    height: 100%;
+}
+
+.topnav__right-user__name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.IconNotice {
+    display: none;
+}
+
+
+/* RESPONSIVE */
+.mobile-hamburger {
+    // display: none;       
+    cursor: pointer;
+    font-size: 1.8rem;
+
+    @media (max-width: 998px) {
+        display: block;
+    }
+}
+
+.content__name__app {
+    font-size: 1.2rem;
+    font-weight: 700;
+    gap: 1rem;
+}

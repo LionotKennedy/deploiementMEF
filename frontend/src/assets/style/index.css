@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* ===================== VARIABLE COULEUR ===================== */
+
+/* // $linear-gradient: linear-gradient(90deg, #97776f, #6dfa08); */
+
+:root {
+  --main-bg: #ffffff;
+  --second-bg: #fafafb;
+  --txt-color: #455560;
+  --txt-white: #fff;
+  --main-color: #349eff;
+  --second-color: #62b4ff;
+  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --main-table: rgba(196, 196, 196, 0.81);
+
+  --main-bg-light: #ffffff;
+  --second-bg-light: #fafafb;
+  --txt-color-light: #455560;
+  --box-shadow-light: 3px 3px 12px 2px rgba(0, 0, 0, 0.252);
+  --main-table-light: rgba(196, 196, 196, 0.81);
+
+  --main-bg-dark: #2d2d2d;
+  --second-bg-dark: #202020;
+  --txt-color-dark: #bbbbbb;
+  --box-shadow-dark: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+  --main-table-dark: #2d2d2d;
+
+  --main-color-blue: #ffb199;
+  --second-color-blue: #ea6292;
+  --primary-color-blue: #ee00ff;
+
+
+  --primary-color-red: rgb(255, 25, 0);
+  --second-color-red: rgb(234, 32, 56);
+  --main-color-red: rgb(211, 135, 130);
+
+
+  --main-color-cyan: #10d4d2;
+  --second-color-cyan: #3e88ff;
+  --primary-color-cyan: #005bea;
+
+
+  --main-color-green: #92ff96;
+  --second-color-green: #14e861;
+  --primary-color-green: #19961f;
+
+
+  --main-color-orange: rgba(255, 128, 0, 1);
+  --second-color-orange: rgba(219, 112, 54, 1);
+  --primary-color-orange: rgba(232, 211, 59, 1);
+
+
+
+  --sidebar-width: 240px;
+  --border-radius: 15px;
+  --topnav-height: 50px;
+
+
+  --transition-cubic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* ===== Colours Page personnalise ===== */
+  --topnav-height-d: 50px;
+  --topnav-height-t: 1rem;
+  --box-shadow-d: 0 0 17px 10px rgb(0 0 0 / 30%);
+  --box-shadow: 0 0 17px 10px rgba(32, 31, 31, 0.779);
+  --box-shadow-q: 0 0 7px 5px rgba(18, 18, 18, 0.219);
+
+  --sidebar-width-d: 100px;
+
+  /* ===== Valeur responsive page personnalise ===== */
+  --sidebar-width-res: 90px;
+}
+
+.light-background {
+  background-color: var(--main-bg-light);
+  color: #000;
+}
+
+.dark-background {
+  background-color: var(--main-bg-dark);
+  color: #fff;
+}
+
+.blue-color {
+  /* background-color: var(--main-color-blue); */
+  background-color: var(--primary-color-blue);
+  color: #fff;
+
+}
+
+.red-color {
+  /* background-color: var(--main-color-red); */
+  background-color: var(--primary-color-red);
+  color: #fff;
+}
+
+.cyan-color {
+  /* background-color: var(--main-color-cyan); */
+  background-color: var(--primary-color-cyan);
+  color: #fff;
+}
+
+.green-color {
+  /* background-color: var(--main-color-green); */
+  background-color: var(--primary-color-green);
+  color: #fff;
+}
+
+.orange-color {
+  /* background-color: var(--main-color-orange); */
+  background-color: var(--second-color-orange);
+  color: #fff;
+}
