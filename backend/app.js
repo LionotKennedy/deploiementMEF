@@ -26,8 +26,6 @@ app.use(cors());
 app.use('/uploads', express.static('uploads'));
 
 dotenv.config();
-// const PORT = process.env.PORT;
-// const PORT = process.env.PORT || 9876;
 const PORT = process.env.PORT || 3000;
 
 const CONNECTION = process.env.MONGODB_CONNECTION;
